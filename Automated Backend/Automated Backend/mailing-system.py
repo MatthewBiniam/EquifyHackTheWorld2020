@@ -10,8 +10,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-user = "equifyint@gmail.com"
-password = "4212712021"
+user = encrypted
+password = encrypted
 
 
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
@@ -52,11 +52,6 @@ num_files=(len(files))
 
 def automated_email(first, last, mail, interest):
 
-    print(first)
-    print(last)
-    print(mail)
-    print(interest)
-    print()
     subject = first+" "+last+"'s Equify Document"
     body = "Hello "+first+"! \nBelow is your customized Equify Opportunity Document"
 
